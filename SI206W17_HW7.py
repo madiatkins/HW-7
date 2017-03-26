@@ -215,6 +215,8 @@ conn.close()
 
 
 
+def get_twitter_users(tweet):
+    return set(x[1:] for x in re.findall("@[A-Za-z0-9_]+", tweet))
 
 
 
